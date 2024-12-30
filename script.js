@@ -1,5 +1,11 @@
-const lblCantidad = $("#lblCantidad");
-const btnContador = $("#btnContador");
+//#region CONST
+const imp_DivineHeader = $('#imp_DivineHeader');
+const imp_DivineTitle = $("#imp_DivineTitle");
+const imp_DivineID = $("#imp_DivineID");
+const imp_DivineModelo = $("#imp_DivineModelo");
+const imp_DivineToner = $("#imp_DivineToner");
+const fechaActual = new Date();
+//#endregion
 
 fncInit();
 
@@ -8,19 +14,5 @@ function fncInit() {
 }
 
 function fncListeners() {
-  fncGetContador();
-  btnContador.click(function () {
-    fncSetContador();
-    fncGetContador();
-  });
-}
 
-function fncSetContador() {
-  let contador = localStorage.getItem("contador");
-  localStorage.setItem("contador", (+contador) + 1);
-}
-
-function fncGetContador() {
-  let contador = +localStorage.getItem("contador");
-  lblCantidad.text(`Cantidad: ${contador} `);
 }
