@@ -1,0 +1,56 @@
+body {
+  background-color: #262626;
+}
+
+#btnContador {
+  width: 250px;
+  height: 250px;
+  background-color: red;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease;
+  outline: none;
+  border-style: solid;
+  border-color: black;
+}
+
+#btnContador:hover {
+  /* background-color: rgb(192, 0, 0); */
+}
+
+#lblCantidad {
+  text-align: center;
+}
+
+.panelSuperior {
+  background-color: lightgray;
+  width: 276px;
+  border-radius: 20px;
+  border-style: solid;
+  border-color: black;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 30%;
+  margin-left: 35%;
+}
+
+.panelInferior {
+  background-color: lightgray;
+  width: 276px;
+  border-radius: 20px;
+  border-style: solid;
+  border-color: black;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 0%;
+  margin-left: 35%;
+}
